@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setappender_19',['setAppender',['../class_r_f24_logger.html#ad36849889c32169c6719001aeef54609',1,'RF24Logger']]]
+  ['not_5fset_9',['NOT_SET',['../group__log_levels.html#ga53228be549fb0aa91100133f3d83846d',1,'logging.h']]]
 ];
