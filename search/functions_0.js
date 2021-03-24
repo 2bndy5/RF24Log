@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debug_22',['debug',['../class_r_f24_logger.html#a03f19fb533a23c35d1c362ad8cd7882d',1,'RF24Logger']]]
+  ['ardout_31',['Ardout',['../class_ardout.html#abcc9a9494f4bbe38943eeffd39f762db',1,'Ardout::Ardout()'],['../class_ardout.html#a573c4ba7b959b732befed3761ef8469e',1,'Ardout::Ardout(Print *outStream)']]]
 ];

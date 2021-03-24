@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['sethandler_15',['sethandler',['../class_r_f24_logger.html#a23b538fab681e8c09f0b78c9e23f9c62',1,'RF24Logger']]],
-  ['setlevel_16',['setLevel',['../class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef',1,'RF24Logger']]],
-  ['setname_17',['setName',['../class_r_f24_logger.html#a84198b95aa120b1f648bc731fb290aac',1,'RF24Logger']]],
-  ['streamtype_18',['StreamType',['../group__stream_type_doc.html',1,'']]]
+  ['rf24log_18',['RF24Log',['../index.html',1,'']]],
+  ['rf24logger_19',['RF24Logger',['../class_r_f24_logger.html',1,'RF24Logger&lt; StreamType &gt;'],['../class_r_f24_logger.html#a07d7c7939e4acbe0e94a38ab587f033c',1,'RF24Logger::RF24Logger()'],['../class_r_f24_logger.html#a3da6e3a878920870bbccfc333e5006ae',1,'RF24Logger::RF24Logger(StreamType *stream, str_t name)'],['../class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861',1,'RF24Logger::RF24Logger(RF24Logger *obj)']]]
 ];

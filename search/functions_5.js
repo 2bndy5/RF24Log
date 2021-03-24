@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['outputdata_27',['outputData',['../class_r_f24_logger.html#afd5de15e82789712f3d7093bc5a31f33',1,'RF24Logger::outputData(Tdata data)'],['../class_r_f24_logger.html#a26ed42d6e991a8a5ada08e3502b9df41',1,'RF24Logger::outputData(Tdata data, Rest... rest)']]],
-  ['outputloglevel_28',['outputLoglevel',['../class_r_f24_logger.html#a4e9a33146bfebe1cd9904983665744b2',1,'RF24Logger']]],
-  ['outputtimestamp_29',['outputTimestamp',['../class_r_f24_logger.html#a49375aec2ab7d03da99817b59d7f1891',1,'RF24Logger']]]
+  ['log_37',['log',['../class_r_f24_logger.html#a444088c1f38ef301dadee2be755ca6a7',1,'RF24Logger::log(uint8_t lvl, Ts... msg)'],['../class_r_f24_logger.html#a184aecb4b198168f7a326efcddd1e717',1,'RF24Logger::log(uint8_t lvl, str_t vendorId, Ts... msg)']]]
 ];

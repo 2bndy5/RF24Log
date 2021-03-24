@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['warn_19',['warn',['../class_r_f24_logger.html#a81891b82174ec780a88c80722730f953',1,'RF24Logger']]],
-  ['warn_20',['WARN',['../group__log_levels.html#ga271d8f7f52be750e5c744a394ec71344',1,'logging.h']]]
+  ['sethandler_20',['sethandler',['../class_r_f24_logger.html#a23b538fab681e8c09f0b78c9e23f9c62',1,'RF24Logger']]],
+  ['setlevel_21',['setLevel',['../class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef',1,'RF24Logger']]],
+  ['setname_22',['setName',['../class_r_f24_logger.html#a84198b95aa120b1f648bc731fb290aac',1,'RF24Logger']]],
+  ['setstream_23',['setStream',['../class_ardout.html#a0eb94ebd488337030e846625e5bd2756',1,'Ardout']]],
+  ['streamtype_24',['StreamType',['../group__stream_type_doc.html',1,'']]]
 ];
