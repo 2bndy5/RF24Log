@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_25',['log',['../class_r_f24_logger.html#ab01c6fdb47719058ef975afd856e82f3',1,'RF24Logger::log(uint8_t lvl, Ts msg...)'],['../class_r_f24_logger.html#adb18464b4a488f1644d2fb4428e9c46c',1,'RF24Logger::log(uint8_t lvl, std:string vendorId, Ts msg...)']]]
+  ['log_26',['log',['../class_r_f24_logger.html#a444088c1f38ef301dadee2be755ca6a7',1,'RF24Logger::log(uint8_t lvl, Ts... msg)'],['../class_r_f24_logger.html#a184aecb4b198168f7a326efcddd1e717',1,'RF24Logger::log(uint8_t lvl, str_t vendorId, Ts... msg)']]]
 ];

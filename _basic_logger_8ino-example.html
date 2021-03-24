@@ -70,6 +70,36 @@ $(function() {
 <p>A basic logging example using RF24Log library</p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;logging.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> setup() {</div>
+<div class="line"> </div>
+<div class="line">    Serial.begin(115200);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// set output stream to Serial object</span></div>
+<div class="line">    logging.sethandler(&amp;Serial);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// print an origin agnostic message</span></div>
+<div class="line">    logging.getLogger() &lt;&lt; <span class="stringliteral">&quot;Starting BasicLogger Example&quot;</span> &lt;&lt; endl;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// set a default origin name for all messages</span></div>
+<div class="line">    logging.setName(<span class="stringliteral">&quot;RF24Log&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// by default, messages for all logging levels are output</span></div>
+<div class="line">    logging.setLevel(<a name="a0"></a><a class="code" href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a>); <span class="comment">// set to debug level</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> loop() {</div>
+<div class="line">    logging.debug(<span class="stringliteral">&quot;This is a DEBUG message&quot;</span>);</div>
+<div class="line">    logging.info(<span class="stringliteral">&quot;This is an INFO message&quot;</span>);</div>
+<div class="line">    logging.warn(<span class="stringliteral">&quot;This is a WARN message&quot;</span>);</div>
+<div class="line">    logging.error(<span class="stringliteral">&quot;This is an ERROR message&quot;</span>);</div>
+<div class="line">    logging.log(11, <span class="stringliteral">&quot;This is a message for a custom DEBUG sublevel&quot;</span>);</div>
+<div class="line">    logging.log(12, <span class="stringliteral">&quot;SimonSays&quot;</span>, <span class="stringliteral">&quot;This is a message from a specific code block&quot;</span>);</div>
+<div class="line">    logging.log(20, <span class="stringliteral">&quot;This is an INFO message&quot;</span>);</div>
+<div class="line">    logging.log(21, <span class="stringliteral">&quot;End:of:Loop&quot;</span>, <span class="stringliteral">&quot;This is a message for a custom INFO sublevel&quot;</span>);</div>
+<div class="line">    delay(2000); <span class="comment">// slow down loop for readability</span></div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__log_levels_html_gad72dbcf6d0153db1b8d8a58001feed83"><div class="ttname"><a href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></div><div class="ttdeci">#define DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00068">logging.h:68</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
