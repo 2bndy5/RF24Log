@@ -94,10 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a444088c1f38ef301dadee2be755ca6a7"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a444088c1f38ef301dadee2be755ca6a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a444088c1f38ef301dadee2be755ca6a7">log</a> (uint8_t lvl, Ts... msg)</td></tr>
 <tr class="separator:a444088c1f38ef301dadee2be755ca6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184aecb4b198168f7a326efcddd1e717"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a184aecb4b198168f7a326efcddd1e717"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a184aecb4b198168f7a326efcddd1e717">log</a> (uint8_t lvl, str_t vendorId, Ts... msg)</td></tr>
-<tr class="memdesc:a184aecb4b198168f7a326efcddd1e717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message.  <a href="class_r_f24_logger.html#a184aecb4b198168f7a326efcddd1e717">More...</a><br /></td></tr>
-<tr class="separator:a184aecb4b198168f7a326efcddd1e717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeadb730df5eece90642e3ed87649e4b"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
+<tr class="memitem:aaeadb730df5eece90642e3ed87649e4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">logOrigin</a> (uint8_t lvl, St origin, Ts... msg)</td></tr>
+<tr class="memdesc:aaeadb730df5eece90642e3ed87649e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message.  <a href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">More...</a><br /></td></tr>
+<tr class="separator:aaeadb730df5eece90642e3ed87649e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23272a52e02bdbb5e23cd9f156fa1e53"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a23272a52e02bdbb5e23cd9f156fa1e53"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">info</a> (Ts... msg)</td></tr>
 <tr class="memdesc:a23272a52e02bdbb5e23cd9f156fa1e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a <a class="el" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a> level message  <a href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">More...</a><br /></td></tr>
@@ -117,14 +117,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a53ea590931bdc2184d3486dc59fe88f6"><td class="memItemLeft" align="right" valign="top"><a id="a53ea590931bdc2184d3486dc59fe88f6"></a>
-StreamType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a53ea590931bdc2184d3486dc59fe88f6">outputTimestamp</a> ()</td></tr>
-<tr class="memdesc:a53ea590931bdc2184d3486dc59fe88f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a timestamp for the proceeding message <br /></td></tr>
-<tr class="separator:a53ea590931bdc2184d3486dc59fe88f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893a1d09f76248a2805519797dcb5690"><td class="memItemLeft" align="right" valign="top"><a id="a893a1d09f76248a2805519797dcb5690"></a>
-StreamType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a893a1d09f76248a2805519797dcb5690">outputLoglevel</a> ()</td></tr>
-<tr class="memdesc:a893a1d09f76248a2805519797dcb5690"><td class="mdescLeft">&#160;</td><td class="mdescRight">output an appropriate log level for the proceeding message <br /></td></tr>
-<tr class="separator:a893a1d09f76248a2805519797dcb5690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5257ff2003453f15ee63d1ebc158d703"><td class="memItemLeft" align="right" valign="top">str_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a5257ff2003453f15ee63d1ebc158d703">timestamp</a> ()</td></tr>
+<tr class="memdesc:a5257ff2003453f15ee63d1ebc158d703"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a timestamp for the proceeding message  <a href="class_r_f24_logger.html#a5257ff2003453f15ee63d1ebc158d703">More...</a><br /></td></tr>
+<tr class="separator:a5257ff2003453f15ee63d1ebc158d703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe17c6bdb49d85f26a356b9beffbebad"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
 <tr class="memitem:afe17c6bdb49d85f26a356b9beffbebad"><td class="memTemplItemLeft" align="right" valign="top">StreamType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#afe17c6bdb49d85f26a356b9beffbebad">outputData</a> (Tdata data)</td></tr>
 <tr class="memdesc:afe17c6bdb49d85f26a356b9beffbebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">output an arbitrary type of data  <a href="class_r_f24_logger.html#afe17c6bdb49d85f26a356b9beffbebad">More...</a><br /></td></tr>
@@ -140,7 +135,7 @@ class RF24Logger&lt; StreamType &gt;</h3>
 
 <p>A templated class for implementing a single logging object. Copied logging (using <a class="el" href="class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861">RF24Logger(RF24Logger*)</a>) objects will re-use the original handler and level. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00084">84</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00088">88</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a07d7c7939e4acbe0e94a38ab587f033c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07d7c7939e4acbe0e94a38ab587f033c">&#9670;&nbsp;</a></span>RF24Logger() <span class="overload">[1/3]</span></h2>
@@ -169,7 +164,7 @@ template&lt;typename StreamType &gt; </div>
 <p>the logger instance's name Empty constructor. level defaults to NOT_SET, and instance has no handler. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00095">95</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00099">99</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +211,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00102">102</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00106">106</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +247,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00108">108</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00112">112</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +288,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00178">178</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00193">193</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +328,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00192">192</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00207">207</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -363,10 +358,10 @@ template&lt;typename StreamType &gt; </div>
 </div><div class="memdoc">
 <p>Returns the logging handler that was configured with <a class="el" href="class_r_f24_logger.html">RF24Logger(S*)</a> or setHandler()</p>
 <p>Example usage: </p><div class="fragment"><div class="line"><a class="code" href="logging_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.getLogger() &lt;&lt; <span class="stringliteral">&quot;a string of text &quot;</span> &lt;&lt; 0 &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; 1.0 &lt;&lt; endl;</div>
-<div class="ttc" id="alogging_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="logging_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient singleton to get started quickly.</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00255">logging.h:255</a></div></div>
+<div class="ttc" id="alogging_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="logging_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient singleton to get started quickly.</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00254">logging.h:254</a></div></div>
 </div><!-- fragment --><p> would ouput "a string of text 0:1.0" with a trailing line feed. </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00138">138</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00142">142</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -406,70 +401,12 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00171">171</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
-
-</div>
-</div>
-<a id="a184aecb4b198168f7a326efcddd1e717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184aecb4b198168f7a326efcddd1e717">&#9670;&nbsp;</a></span>log() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename StreamType &gt; </div>
-<div class="memtemplate">
-template&lt;typename... Ts&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::log </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>lvl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">str_t&#160;</td>
-          <td class="paramname"><em>vendorId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Ts...&#160;</td>
-          <td class="paramname"><em>msg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Log a message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lvl</td><td>The logging level used for the specified message. </td></tr>
-    <tr><td class="paramname">vendorId</td><td>The orgin of the message. </td></tr>
-    <tr><td class="paramname">msg</td><td>The specified message. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00155">155</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00186">186</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
 <a id="a444088c1f38ef301dadee2be755ca6a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a444088c1f38ef301dadee2be755ca6a7">&#9670;&nbsp;</a></span>log() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a444088c1f38ef301dadee2be755ca6a7">&#9670;&nbsp;</a></span>log()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +450,65 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00146">146</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00150">150</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="aaeadb730df5eece90642e3ed87649e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeadb730df5eece90642e3ed87649e4b">&#9670;&nbsp;</a></span>logOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StreamType &gt; </div>
+<div class="memtemplate">
+template&lt;typename St , typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::logOrigin </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>lvl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">St&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ts...&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log a message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvl</td><td>The logging level used for the specified message. </td></tr>
+    <tr><td class="paramname">vendorId</td><td>The orgin of the message. </td></tr>
+    <tr><td class="paramname">msg</td><td>The specified message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00159">159</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +548,7 @@ template&lt;typename Tdata &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00232">232</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00231">231</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +599,7 @@ template&lt;typename Tdata , typename... Rest&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00246">246</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00245">245</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +635,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00114">114</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00118">118</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +671,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00120">120</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00124">124</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +704,39 @@ template&lt;typename StreamType &gt; </div>
 <p>Set a default <code>name</code> for the instance. </p>
 <p>This will be used in calls to log(uint8_t lvl, Ts msg...) </p>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00127">127</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00131">131</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="a5257ff2003453f15ee63d1ebc158d703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5257ff2003453f15ee63d1ebc158d703">&#9670;&nbsp;</a></span>timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename StreamType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str_t <a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::timestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>output a timestamp for the proceeding message </p>
+<dl class="section note"><dt>Note</dt><dd>this is for non-Arduino platforms </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00216">216</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +776,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00185">185</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00200">200</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
