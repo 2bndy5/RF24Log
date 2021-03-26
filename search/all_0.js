@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['debug_0',['debug',['../class_r_f24_logger.html#a03f19fb533a23c35d1c362ad8cd7882d',1,'RF24Logger']]],
-  ['debug_1',['DEBUG',['../group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83',1,'RF24Log.h']]]
+  ['_5flinefeed_0',['_LineFeed',['../group__endl.html#ga199129fd6369564f66b8a0a19786b0c4',1,'PrintOut.h']]]
 ];

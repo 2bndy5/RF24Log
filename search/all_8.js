@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['rf24log_15',['RF24Log',['../index.html',1,'']]],
-  ['rf24log_2eh_16',['RF24Log.h',['../_r_f24_log_8h.html',1,'']]],
-  ['rf24log_5fconfig_2eh_17',['RF24Log_config.h',['../_r_f24_log__config_8h.html',1,'']]],
-  ['rf24logger_18',['RF24Logger',['../class_r_f24_logger.html',1,'RF24Logger&lt; StreamType &gt;'],['../class_r_f24_logger.html#a07d7c7939e4acbe0e94a38ab587f033c',1,'RF24Logger::RF24Logger()'],['../class_r_f24_logger.html#a0a66a2f1fc774661987a881589725a06',1,'RF24Logger::RF24Logger(StreamType *stream, const char *name)'],['../class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861',1,'RF24Logger::RF24Logger(RF24Logger *obj)']]]
+  ['pgm_5fread_5fptr_17',['pgm_read_ptr',['../_r_f24_log__config_8h.html#aa8a1e9025ca9c22362fd6df825078b90',1,'RF24Log_config.h']]],
+  ['printout_18',['PrintOut',['../class_print_out.html',1,'PrintOut'],['../class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34',1,'PrintOut::PrintOut()'],['../class_print_out.html#ae954392b39153bfdd595716a344af07e',1,'PrintOut::PrintOut(Print *outStream)']]],
+  ['printout_2eh_19',['PrintOut.h',['../_print_out_8h.html',1,'']]],
+  ['progmem_20',['PROGMEM',['../_r_f24_log__config_8h.html#a75acaba9e781937468d0911423bc0c35',1,'RF24Log_config.h']]]
 ];

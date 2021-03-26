@@ -82,15 +82,15 @@ $(function() {
 <div class="line">  <a name="a1"></a><a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.setHandler(&amp;ardout);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// print an origin agnostic message</span></div>
-<div class="line">  <a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.getLogger() &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;Starting BasicLogger Example&quot;</span> &lt;&lt; endl;</div>
+<div class="line">  <a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.getLogger() &lt;&lt; <a name="a2"></a><a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a> &lt;&lt; <span class="stringliteral">&quot;Starting BasicLogger Example&quot;</span> &lt;&lt; <a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a>;</div>
 <div class="line">  <span class="comment">// which is usably equivalent to the following</span></div>
-<div class="line">  ardout &lt;&lt; <span class="stringliteral">&quot;A prompt without using the logging object&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line">  ardout &lt;&lt; <span class="stringliteral">&quot;A prompt without using the logging object&quot;</span> &lt;&lt; <a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a> &lt;&lt; <a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// set a default origin name for all messages</span></div>
 <div class="line">  <a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.setName(<span class="stringliteral">&quot;RF24Log&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// by default, messages for all logging levels are disabled</span></div>
-<div class="line">  <a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.setLevel(<a name="a2"></a><a class="code" href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a>); <span class="comment">// set to debug level (0 will disable logging messages)</span></div>
+<div class="line">  <a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.setLevel(<a name="a3"></a><a class="code" href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a>); <span class="comment">// set to debug level (0 will disable logging messages)</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
@@ -105,8 +105,9 @@ $(function() {
 <div class="line">  delay(1000); <span class="comment">// slow down loop for readability</span></div>
 <div class="line">}</div>
 <div class="ttc" id="a_r_f24_log_8h_html"><div class="ttname"><a href="_r_f24_log_8h.html">RF24Log.h</a></div></div>
-<div class="ttc" id="a_r_f24_log_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient singleton to get started quickly.</div><div class="ttdef"><b>Definition:</b> <a href="_r_f24_log_8h_source.html#l00222">RF24Log.h:222</a></div></div>
-<div class="ttc" id="aclass_print_out_html"><div class="ttname"><a href="class_print_out.html">PrintOut</a></div><div class="ttdoc">A wrapper class that inherits from Print class.</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00047">PrintOut.h:48</a></div></div>
+<div class="ttc" id="a_r_f24_log_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient variable to get started quickly on supported platforms.</div><div class="ttdef"><b>Definition:</b> <a href="_r_f24_log_8h_source.html#l00219">RF24Log.h:219</a></div></div>
+<div class="ttc" id="aclass_print_out_html"><div class="ttname"><a href="class_print_out.html">PrintOut</a></div><div class="ttdoc">A wrapper class that inherits from Print class.</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00069">PrintOut.h:70</a></div></div>
+<div class="ttc" id="agroup__endl_html_gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18"><div class="ttname"><a href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a></div><div class="ttdeci">@ endl</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00035">PrintOut.h:35</a></div></div>
 <div class="ttc" id="agroup__log_levels_html_gad72dbcf6d0153db1b8d8a58001feed83"><div class="ttname"><a href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a></div><div class="ttdeci">#define DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_r_f24_log_8h_source.html#l00033">RF24Log.h:33</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

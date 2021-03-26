@@ -133,9 +133,9 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename StreamType&gt;<br />
 class RF24Logger&lt; StreamType &gt;</h3>
 
-<p>A templated class for implementing a single logging object. Copied logging (using <a class="el" href="class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861">RF24Logger(RF24Logger*)</a>) objects will re-use the original handler and level. </p>
+<p>A templated class for implementing a single logging object. Copied <a class="el" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a> objects (using <a class="el" href="class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861">RF24Logger(RF24Logger*)</a>) will re-use the original handler and level. </p><dl class="section see"><dt>See also</dt><dd>the pre-instantiated <a class="el" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a> variable </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00056">56</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00049">49</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a07d7c7939e4acbe0e94a38ab587f033c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07d7c7939e4acbe0e94a38ab587f033c">&#9670;&nbsp;</a></span>RF24Logger() <span class="overload">[1/3]</span></h2>
@@ -164,7 +164,7 @@ template&lt;typename StreamType &gt; </div>
 <p>the logger instance's name (max of 39 characters) Empty constructor. level defaults to NOT_SET, and instance has no handler. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00067">67</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00060">60</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00074">74</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00067">67</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00080">80</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00073">73</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00161">161</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00155">155</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00175">175</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00169">169</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -357,11 +357,12 @@ template&lt;typename StreamType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns the logging handler that was configured with <a class="el" href="class_r_f24_logger.html">RF24Logger(S*)</a> or <a class="el" href="class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36">setHandler()</a></p>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.getLogger() &lt;&lt; <span class="stringliteral">&quot;a string of text &quot;</span> &lt;&lt; 0 &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; 1.0 &lt;&lt; endl;</div>
-<div class="ttc" id="a_r_f24_log_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient singleton to get started quickly.</div><div class="ttdef"><b>Definition:</b> <a href="_r_f24_log_8h_source.html#l00222">RF24Log.h:222</a></div></div>
-</div><!-- fragment --><p> would ouput "a string of text 0:1.0" with a trailing line feed. </p>
+<p>Example usage: </p><div class="fragment"><div class="line"><a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>.getLogger() &lt;&lt; <span class="stringliteral">&quot;a string of text &quot;</span> &lt;&lt; 0 &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; 1.0 &lt;&lt; <a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a>;</div>
+<div class="ttc" id="a_r_f24_log_8h_html_a8bf9367744937d929569a14e93f1cddf"><div class="ttname"><a href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a></div><div class="ttdeci">RF24Logger&lt; Stream_t &gt; logging</div><div class="ttdoc">A convenient variable to get started quickly on supported platforms.</div><div class="ttdef"><b>Definition:</b> <a href="_r_f24_log_8h_source.html#l00219">RF24Log.h:219</a></div></div>
+<div class="ttc" id="agroup__endl_html_gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18"><div class="ttname"><a href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a></div><div class="ttdeci">@ endl</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00035">PrintOut.h:35</a></div></div>
+</div><!-- fragment --><p> would ouput "a string of text 0:1.0" with a trailing line feed. </p><dl class="section return"><dt>Returns</dt><dd>The instantiated output stream object passed to <a class="el" href="class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36">setHandler()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00110">110</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00104">104</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +402,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00154">154</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00148">148</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +451,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00118">118</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00112">112</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +509,7 @@ template&lt;typename St , typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00127">127</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00121">121</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -547,8 +548,9 @@ template&lt;typename Tdata &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The instantiated output stream object passed to <a class="el" href="class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36">setHandler()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00199">199</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00195">195</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -598,8 +600,9 @@ template&lt;typename Tdata , typename... Rest&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The instantiated output stream object passed to <a class="el" href="class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36">setHandler()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00213">213</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00210">210</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +638,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00086">86</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00079">79</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +674,7 @@ template&lt;typename StreamType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00092">92</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00085">85</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -702,9 +705,14 @@ template&lt;typename StreamType &gt; </div>
 </div><div class="memdoc">
 
 <p>Set a default <code>name</code> for the instance. </p>
-<p>This will be used in calls to log(uint8_t lvl, Ts msg...) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>This will be used in calls to log(uint8_t lvl, Ts msg...) </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00099">99</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00092">92</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -735,8 +743,9 @@ template&lt;typename StreamType &gt; </div>
 
 <p>output a timestamp for the proceeding message </p>
 <dl class="section note"><dt>Note</dt><dd>this is for non-Arduino platforms </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A c-string of the current time </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00184">184</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00179">179</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +785,7 @@ template&lt;typename... Ts&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00168">168</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00162">162</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
 
 </div>
 </div>

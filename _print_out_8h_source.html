@@ -71,7 +71,7 @@ $(function() {
 <div class="title">PrintOut.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="_print_out_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef ARDOUT_H</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define ARDOUT_H</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma once</span></div>
@@ -80,56 +80,59 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// #include &quot;stdint.h&quot;  // uint8_t</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;Print.h&quot;</span>   <span class="comment">// doesn&#39;t use pgmspace.h if defined(ARDUINO_API_VERSION)</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define Stream_t Print</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">enum</span> _LineFeed { endl };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// To use `Serial.println();` as `Serial &lt;&lt; endl;`</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">inline</span> Print &amp;operator &lt;&lt;(Print &amp;obj, _LineFeed arg)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!arg) { obj.println(); }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> obj;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// To use `Serial.print(data);` as `Serial &lt;&lt; data;`</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">inline</span> Print &amp;operator &lt;&lt;(Print &amp;obj, T arg)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    obj.print(arg);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> obj;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_print_out.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_print_out.html">PrintOut</a> : <span class="keyword">public</span> Print</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group__stream_type_doc.html#gae85f8973b164120ecbc4278f0510e99b">   27</a></span>&#160;<span class="preprocessor">#define Stream_t Print</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__endl.html#ga199129fd6369564f66b8a0a19786b0c4">   35</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group__endl.html#ga199129fd6369564f66b8a0a19786b0c4">_LineFeed</a> { <a class="code" href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a>  };</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_print_out.html#a1860d83f99e43f42ac8d440df0a72171">   44</a></span>&#160;<span class="keyword">inline</span> Print &amp;<a class="code" href="_print_out_8h.html#a1860d83f99e43f42ac8d440df0a72171">operator &lt;&lt;</a>(Print &amp;obj, <a class="code" href="group__endl.html#ga199129fd6369564f66b8a0a19786b0c4">_LineFeed</a> arg)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (!arg) { obj.println(); }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Print* out_stream;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">   56</a></span>&#160;    <a class="code" href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">PrintOut</a>() : out_stream(nullptr) {}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_print_out.html#ae954392b39153bfdd595716a344af07e">   63</a></span>&#160;    <a class="code" href="class_print_out.html#ae954392b39153bfdd595716a344af07e">PrintOut</a>(Print* outStream) : out_stream(outStream) {}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">   70</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">setStream</a>(Print* outStream) { out_stream = outStream; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_print_out.html#a67f6d9d3380546103f5a639644d66c04">   57</a></span>&#160;<span class="keyword">inline</span> Print &amp;<a class="code" href="_print_out_8h.html#a1860d83f99e43f42ac8d440df0a72171">operator &lt;&lt;</a>(Print &amp;obj, T arg)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    obj.print(arg);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_print_out.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_print_out.html">PrintOut</a> : <span class="keyword">public</span> Print</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">   73</a></span>&#160;    Print&amp; <a class="code" href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">get</a>() { <span class="keywordflow">return</span> *out_stream; }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> Print &amp;operator &lt;&lt;(Print &amp;obj, T arg);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> Print &amp;operator &lt;&lt;(Print &amp;obj, _LineFeed arg);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Print* out_stream;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">   78</a></span>&#160;    <a class="code" href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">PrintOut</a>() : out_stream(nullptr) {}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// the following methods are overiden virtual functions that default to their parents&#39; behavior</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// I&#39;m not documenting these</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> write(uint8_t chr) { <span class="keywordflow">return</span> out_stream ? out_stream-&gt;write(chr) : 0; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> write(<span class="keyword">const</span> uint8_t* buf, <span class="keywordtype">size_t</span> len) { <span class="keywordflow">return</span> out_stream ? out_stream-&gt;write(buf, len) : 0; }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ARDOUT_H</span></div>
-<div class="ttc" id="aclass_print_out_html"><div class="ttname"><a href="class_print_out.html">PrintOut</a></div><div class="ttdoc">A wrapper class that inherits from Print class.</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00047">PrintOut.h:48</a></div></div>
-<div class="ttc" id="aclass_print_out_html_a42725855c22a3b0c11b5f692ad3d832d"><div class="ttname"><a href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">PrintOut::setStream</a></div><div class="ttdeci">void setStream(Print *outStream)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00070">PrintOut.h:70</a></div></div>
-<div class="ttc" id="aclass_print_out_html_a54e6c8dbedaa0ad8f72d54990eeca3c2"><div class="ttname"><a href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">PrintOut::get</a></div><div class="ttdeci">Print &amp; get()</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00073">PrintOut.h:73</a></div></div>
-<div class="ttc" id="aclass_print_out_html_ae2f0961cff82d8c9b42300177ed28c34"><div class="ttname"><a href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">PrintOut::PrintOut</a></div><div class="ttdeci">PrintOut()</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00056">PrintOut.h:56</a></div></div>
-<div class="ttc" id="aclass_print_out_html_ae954392b39153bfdd595716a344af07e"><div class="ttname"><a href="class_print_out.html#ae954392b39153bfdd595716a344af07e">PrintOut::PrintOut</a></div><div class="ttdeci">PrintOut(Print *outStream)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00063">PrintOut.h:63</a></div></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_print_out.html#ae954392b39153bfdd595716a344af07e">   85</a></span>&#160;    <a class="code" href="class_print_out.html#ae954392b39153bfdd595716a344af07e">PrintOut</a>(Print* outStream) : out_stream(outStream) {}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">setStream</a>(Print* outStream) { out_stream = outStream; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">   98</a></span>&#160;    Print&amp; <a class="code" href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">get</a>() { <span class="keywordflow">return</span> *out_stream; }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> Print &amp;<a class="code" href="class_print_out.html#a67f6d9d3380546103f5a639644d66c04">operator &lt;&lt;</a>(Print &amp;obj, T arg);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">friend</span> <span class="keyword">inline</span> Print &amp;<a class="code" href="class_print_out.html#a67f6d9d3380546103f5a639644d66c04">operator &lt;&lt;</a>(Print &amp;obj, <a class="code" href="group__endl.html#ga199129fd6369564f66b8a0a19786b0c4">_LineFeed</a> arg);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_print_out.html#ac1b98eb073d86562f566d23bc7153531">  110</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_print_out.html#ac1b98eb073d86562f566d23bc7153531">write</a>(uint8_t chr) { <span class="keywordflow">return</span> out_stream ? out_stream-&gt;write(chr) : 0; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_print_out.html#a23c8a0c61dfe1bb4a4f07c31fcc2b943">  118</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_print_out.html#a23c8a0c61dfe1bb4a4f07c31fcc2b943">write</a>(<span class="keyword">const</span> uint8_t* buf, <span class="keywordtype">size_t</span> len) { <span class="keywordflow">return</span> out_stream ? out_stream-&gt;write(buf, len) : 0; }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ARDOUT_H</span></div>
+<div class="ttc" id="a_print_out_8h_html_a1860d83f99e43f42ac8d440df0a72171"><div class="ttname"><a href="_print_out_8h.html#a1860d83f99e43f42ac8d440df0a72171">operator&lt;&lt;</a></div><div class="ttdeci">Print &amp; operator&lt;&lt;(Print &amp;obj, _LineFeed arg)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00044">PrintOut.h:44</a></div></div>
+<div class="ttc" id="aclass_print_out_html"><div class="ttname"><a href="class_print_out.html">PrintOut</a></div><div class="ttdoc">A wrapper class that inherits from Print class.</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00069">PrintOut.h:70</a></div></div>
+<div class="ttc" id="aclass_print_out_html_a23c8a0c61dfe1bb4a4f07c31fcc2b943"><div class="ttname"><a href="class_print_out.html#a23c8a0c61dfe1bb4a4f07c31fcc2b943">PrintOut::write</a></div><div class="ttdeci">virtual size_t write(const uint8_t *buf, size_t len)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00118">PrintOut.h:118</a></div></div>
+<div class="ttc" id="aclass_print_out_html_a42725855c22a3b0c11b5f692ad3d832d"><div class="ttname"><a href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">PrintOut::setStream</a></div><div class="ttdeci">void setStream(Print *outStream)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00092">PrintOut.h:92</a></div></div>
+<div class="ttc" id="aclass_print_out_html_a54e6c8dbedaa0ad8f72d54990eeca3c2"><div class="ttname"><a href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">PrintOut::get</a></div><div class="ttdeci">Print &amp; get()</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00098">PrintOut.h:98</a></div></div>
+<div class="ttc" id="aclass_print_out_html_a67f6d9d3380546103f5a639644d66c04"><div class="ttname"><a href="class_print_out.html#a67f6d9d3380546103f5a639644d66c04">PrintOut::operator&lt;&lt;</a></div><div class="ttdeci">friend Print &amp; operator&lt;&lt;(Print &amp;obj, T arg)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00057">PrintOut.h:57</a></div></div>
+<div class="ttc" id="aclass_print_out_html_ac1b98eb073d86562f566d23bc7153531"><div class="ttname"><a href="class_print_out.html#ac1b98eb073d86562f566d23bc7153531">PrintOut::write</a></div><div class="ttdeci">virtual size_t write(uint8_t chr)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00110">PrintOut.h:110</a></div></div>
+<div class="ttc" id="aclass_print_out_html_ae2f0961cff82d8c9b42300177ed28c34"><div class="ttname"><a href="class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34">PrintOut::PrintOut</a></div><div class="ttdeci">PrintOut()</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00078">PrintOut.h:78</a></div></div>
+<div class="ttc" id="aclass_print_out_html_ae954392b39153bfdd595716a344af07e"><div class="ttname"><a href="class_print_out.html#ae954392b39153bfdd595716a344af07e">PrintOut::PrintOut</a></div><div class="ttdeci">PrintOut(Print *outStream)</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00085">PrintOut.h:85</a></div></div>
+<div class="ttc" id="agroup__endl_html_ga199129fd6369564f66b8a0a19786b0c4"><div class="ttname"><a href="group__endl.html#ga199129fd6369564f66b8a0a19786b0c4">_LineFeed</a></div><div class="ttdeci">_LineFeed</div><div class="ttdoc">a privately used global enum</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00035">PrintOut.h:35</a></div></div>
+<div class="ttc" id="agroup__endl_html_gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18"><div class="ttname"><a href="group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18">endl</a></div><div class="ttdeci">@ endl</div><div class="ttdef"><b>Definition:</b> <a href="_print_out_8h_source.html#l00035">PrintOut.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

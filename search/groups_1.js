@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['streamtype_49',['StreamType',['../group__stream_type_doc.html',1,'']]]
+  ['logging_20levels_73',['Logging Levels',['../group__log_levels.html',1,'']]]
 ];
