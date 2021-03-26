@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ardout_0',['Ardout',['../class_ardout.html',1,'Ardout'],['../class_ardout.html#abcc9a9494f4bbe38943eeffd39f762db',1,'Ardout::Ardout()'],['../class_ardout.html#a573c4ba7b959b732befed3761ef8469e',1,'Ardout::Ardout(Print *outStream)']]],
-  ['ardout_2eh_1',['ardout.h',['../ardout_8h.html',1,'']]]
+  ['debug_0',['debug',['../class_r_f24_logger.html#a03f19fb533a23c35d1c362ad8cd7882d',1,'RF24Logger']]],
+  ['debug_1',['DEBUG',['../group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83',1,'RF24Log.h']]]
 ];
