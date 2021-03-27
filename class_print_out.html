@@ -91,8 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae954392b39153bfdd595716a344af07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42725855c22a3b0c11b5f692ad3d832d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">setStream</a> (Print *outStream)</td></tr>
 <tr class="separator:a42725855c22a3b0c11b5f692ad3d832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e6c8dbedaa0ad8f72d54990eeca3c2"><td class="memItemLeft" align="right" valign="top">Print &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_print_out.html#a54e6c8dbedaa0ad8f72d54990eeca3c2">get</a> ()</td></tr>
-<tr class="separator:a54e6c8dbedaa0ad8f72d54990eeca3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88151a4ac47f004d962bd4cac5c73091"><td class="memItemLeft" align="right" valign="top">Print &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_print_out.html#a88151a4ac47f004d962bd4cac5c73091">getStream</a> ()</td></tr>
+<tr class="separator:a88151a4ac47f004d962bd4cac5c73091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b98eb073d86562f566d23bc7153531"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_print_out.html#ac1b98eb073d86562f566d23bc7153531">write</a> (uint8_t chr)</td></tr>
 <tr class="separator:ac1b98eb073d86562f566d23bc7153531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c8a0c61dfe1bb4a4f07c31fcc2b943"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_print_out.html#a23c8a0c61dfe1bb4a4f07c31fcc2b943">write</a> (const uint8_t *buf, size_t len)</td></tr>
@@ -108,7 +108,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class that inherits from <code>Print</code> class. </p>
-<p>This class implements C++ <code>cout</code> output operator (<code>&lt;&lt;</code>) for any Arduino API that inherit from the <code>Print</code> class (like the popular <code>Serial</code> objects). </p>
+<p>This class implements C++ <code>cout</code> output operator (<code>&lt;&lt;</code>) for any Arduino API that inherits from the <code>Print</code> class (like the popular <code>Serial</code> objects). </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_logger_8ino-example.html#_a0">BasicLogger.ino</a>, and <a class="el" href="_multiple_loggers_8ino-example.html#_a0">MultipleLoggers.ino</a>.</dd>
 </dl>
 
@@ -165,7 +165,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Instance constructor; initialize the output stream. </p><dl class="section note"><dt>Note</dt><dd><code>Serial</code> objects still require <code>begin()</code> to be called prior to instantiation. </dd></dl>
+<p>Instance constructor; initialize the output stream. </p><dl class="section note"><dt>Note</dt><dd><code>Serial</code> objects still require <code>Serial.begin()</code> to be called separately. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">outStream</td><td>The output stream to wrap </td></tr>
@@ -178,8 +178,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a54e6c8dbedaa0ad8f72d54990eeca3c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e6c8dbedaa0ad8f72d54990eeca3c2">&#9670;&nbsp;</a></span>get()</h2>
+<a id="a88151a4ac47f004d962bd4cac5c73091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88151a4ac47f004d962bd4cac5c73091">&#9670;&nbsp;</a></span>getStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Print&amp; PrintOut::get </td>
+          <td class="memname">Print&amp; PrintOut::getStream </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -200,9 +200,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the reference to the output stream </p><dl class="section return"><dt>Returns</dt><dd>The instantiated output stream passed to <a class="el" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">setStream()</a> </dd></dl>
+<p>Get a reference to the output stream </p><dl class="section return"><dt>Returns</dt><dd>The instantiated output stream passed to <a class="el" href="class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d">setStream()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00098">98</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00101">101</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><code>Serial</code> objects still require <code>begin()</code> to be called prior to instantiation. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><code>Serial</code> objects still require <code>Serial.begin()</code> to be called separately. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00092">92</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
 
@@ -276,14 +276,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>A virtual function overide that default to its parents' behavior </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>A byte array to write to the outpput stream </td></tr>
+    <tr><td class="paramname">buf</td><td>A byte array to write to the output stream </td></tr>
     <tr><td class="paramname">len</td><td>The length of <code>buf</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the amount of bytes written to the output stream </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00118">118</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00127">127</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
 
 </div>
 </div>
@@ -312,13 +312,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>A virtual function overide that default to its parents' behavior </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">chr</td><td>A byte to write to the outpput stream </td></tr>
+    <tr><td class="paramname">chr</td><td>A byte to write to the output stream </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the amount of bytes written to the output stream </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00110">110</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_print_out_8h_source.html#l00116">116</a> of file <a class="el" href="_print_out_8h_source.html">PrintOut.h</a>.</p>
 
 </div>
 </div>
