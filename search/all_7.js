@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['operator_3c_3c_15',['operator&lt;&lt;',['../class_print_out.html#a67f6d9d3380546103f5a639644d66c04',1,'PrintOut::operator&lt;&lt;()'],['../class_print_out.html#a1860d83f99e43f42ac8d440df0a72171',1,'PrintOut::operator&lt;&lt;()'],['../_print_out_8h.html#a1860d83f99e43f42ac8d440df0a72171',1,'operator&lt;&lt;(Print &amp;obj, _LineFeed arg):&#160;PrintOut.h'],['../_print_out_8h.html#a67f6d9d3380546103f5a639644d66c04',1,'operator&lt;&lt;(Print &amp;obj, T arg):&#160;PrintOut.h']]],
-  ['outputdata_16',['outputData',['../class_r_f24_logger.html#afe17c6bdb49d85f26a356b9beffbebad',1,'RF24Logger::outputData(Tdata data)'],['../class_r_f24_logger.html#a0621bef753a8a0564ad67b559117f3d7',1,'RF24Logger::outputData(Tdata data, Rest... rest)']]]
+  ['rf24log_10',['RF24Log',['../index.html',1,'']]],
+  ['rf24logger_11',['RF24Logger',['../class_r_f24_logger.html',1,'RF24Logger'],['../class_r_f24_logger.html#aff3589cfd19931ce88370d42f20ac613',1,'RF24Logger::RF24Logger()']]],
+  ['rf24logger_12',['rf24Logger',['../_r_f24_logger_8cpp.html#a69c6af0be57a4a9868d516ef55e843f0',1,'rf24Logger():&#160;RF24Logger.cpp'],['../_r_f24_logger_8h.html#a69c6af0be57a4a9868d516ef55e843f0',1,'rf24Logger():&#160;RF24Logger.cpp']]],
+  ['rf24logger_2ecpp_13',['RF24Logger.cpp',['../_r_f24_logger_8cpp.html',1,'']]],
+  ['rf24logger_2eh_14',['RF24Logger.h',['../_r_f24_logger_8h.html',1,'']]],
+  ['rf24loghandler_15',['RF24LogHandler',['../class_r_f24_log_handler.html',1,'']]],
+  ['rf24loghandler_2eh_16',['RF24LogHandler.h',['../_r_f24_log_handler_8h.html',1,'']]],
+  ['rf24loglevel_17',['RF24LogLevel',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0',1,'RF24LogLevel.h']]],
+  ['rf24loglevel_2eh_18',['RF24LogLevel.h',['../_r_f24_log_level_8h.html',1,'']]]
 ];

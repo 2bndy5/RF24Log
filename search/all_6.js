@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['not_5fset_14',['NOT_SET',['../group__log_levels.html#ga53228be549fb0aa91100133f3d83846d',1,'RF24Log.h']]]
+  ['off_9',['OFF',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0aac132f2982b98bcaa3445e535a03ff75',1,'RF24LogLevel.h']]]
 ];

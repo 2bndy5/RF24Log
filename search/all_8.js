@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['pgm_5fread_5fptr_17',['pgm_read_ptr',['../_r_f24_log__config_8h.html#aa8a1e9025ca9c22362fd6df825078b90',1,'RF24Log_config.h']]],
-  ['printout_18',['PrintOut',['../class_print_out.html',1,'PrintOut'],['../class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34',1,'PrintOut::PrintOut()'],['../class_print_out.html#ae954392b39153bfdd595716a344af07e',1,'PrintOut::PrintOut(Print *outStream)']]],
-  ['printout_2eh_19',['PrintOut.h',['../_print_out_8h.html',1,'']]],
-  ['progmem_20',['PROGMEM',['../_r_f24_log__config_8h.html#a75acaba9e781937468d0911423bc0c35',1,'RF24Log_config.h']]]
+  ['sethandler_19',['setHandler',['../class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2',1,'RF24Logger']]],
+  ['setloglevel_20',['setLogLevel',['../class_r_f24_log_handler.html#a017777bdc4657a975c5c271a8949427d',1,'RF24LogHandler']]]
 ];

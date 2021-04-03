@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printout_53',['PrintOut',['../class_print_out.html#ae2f0961cff82d8c9b42300177ed28c34',1,'PrintOut::PrintOut()'],['../class_print_out.html#ae954392b39153bfdd595716a344af07e',1,'PrintOut::PrintOut(Print *outStream)']]]
+  ['warn_37',['warn',['../class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d',1,'RF24Logger']]],
+  ['write_38',['write',['../class_r_f24_log_handler.html#a87beb84b8cb17ac0022d37f0d826585a',1,'RF24LogHandler::write(uint8_t logLevel, const __FlashStringHelper *vendorId, const char *message, va_list *args)=0'],['../class_r_f24_log_handler.html#aa455819afeba8b93df2599a0f0d10826',1,'RF24LogHandler::write(uint8_t logLevel, const __FlashStringHelper *vendorId, const __FlashStringHelper *message, va_list *args)=0']]]
 ];
