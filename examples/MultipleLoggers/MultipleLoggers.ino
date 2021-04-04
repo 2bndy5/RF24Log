@@ -16,37 +16,37 @@ PrintOut ardout(&Serial);
 
 class MyLib1
 {
-private:
+  private:
     RF24Logger<Stream_t> logger;
 
-public:
-  MyLib1() {
-    logger = RF24Logger<Stream_t>(&logging);
-    logger.setName("MyLib1");
-    logger.info("object instantiated successfully!");
-  }
+  public:
+    MyLib1() {
+      logger = RF24Logger<Stream_t>(&logging);
+      logger.setName("MyLib1");
+      logger.info("object instantiated successfully!");
+    }
 
-  void func(uint8_t arg) {
-    logger.logOrigin(INFO, "MyLib1.func", "received ", arg, " as an argument");
-  }
+    void func(uint8_t arg) {
+      logger.logOrigin(INFO, "MyLib1.func", "received ", arg, " as an argument");
+    }
 };
 
 class MyLib2
 {
-private:
+  private:
     RF24Logger<Stream_t> logger;
 
-public:
-  MyLib2() {
-    logger = RF24Logger<Stream_t>(&logging);
-    logger.setName("MyLib2");
-    logger.info("object instantiated successfully!");
-    logger.setLevel(WARN); // notice this is after we called logger.info()
-  }
+  public:
+    MyLib2() {
+      logger = RF24Logger<Stream_t>(&logging);
+      logger.setName("MyLib2");
+      logger.info("object instantiated successfully!");
+      logger.setLevel(WARN); // notice this is after we called logger.info()
+    }
 
-  void func(uint8_t arg) {
-    logger.logOrigin(INFO, "MyLib2.func", "received ", arg, " as an argument");
-  }
+    void func(uint8_t arg) {
+      logger.logOrigin(INFO, "MyLib2.func", "received ", arg, " as an argument");
+    }
 };
 
 MyLib1* lib1 = nullptr;
