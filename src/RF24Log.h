@@ -52,26 +52,22 @@ private:
 
     uint8_t level; /** the logging level used to filter logging messages */
     StreamType* handler; /** the output stream */
-    char _name[40]; /** the logger instance's name (max of 39 characters)*/
 
 public:
 
     /** Empty constructor. level defaults to @ref NOT_SET, and instance has no handler. */
     RF24Logger() : level(NOT_SET), handler(nullptr)
     {
-        _name[0] = 0;
     }
 
     /**
      * Instance constructor. The , and the instance's
      * handler is initialized.
      * @param stream The handler to which all logging output will be directed.
-     * @param name The origin's name of the logger's messages.
      * @param lvl The instance's logging level defaults to @ref NOT_SET if not specified.
      */
-    RF24Logger(StreamType* stream, const char* name, uint8_t lvl = NOT_SET) : level(lvl), handler(stream)
+    RF24Logger(StreamType* stream, uint8_t lvl = NOT_SET) : level(lvl), handler(stream)
     {
-        strcpy(_name, name);
     }
 
     /**
@@ -81,7 +77,6 @@ public:
      */
     RF24Logger(RF24Logger* obj) : level(obj->level), handler(obj->handler)
     {
-        _name[0] = 0;
     }
 
     /**
@@ -113,45 +108,18 @@ public:
     }
 
     /**
-     * Returns the logging handler that was configured with RF24Logger(RF24Logger*),
-     * RF24Logger(StreamType*, const char*) or setHandler()
-     *
-     * Example usage:
-     * @code
-     * logging.getLogger() << "a string of text " << 0 << ':' << 1.0 << endl;
-     * @endcode
-     * would ouput "a string of text 0:1.0" with a trailing line feed.
-     * @returns The instantiated output stream object passed to setHandler()
-     */
-    StreamType &getLogger()
-    {
-        return *handler;
-    }
-
-    /**
-     * Log a message
-     * @param lvl The logging level used for the specified message.
-     * @param msg The specified message.
-     */
-    template <typename... Ts>
-    void log(uint8_t lvl, Ts... msg)
-    {
-        logOrigin(lvl, _name, msg...);
-    }
-
-    /**
      * @brief Log a message
      * @param lvl The logging level used for the specified message.
      * @param origin The orgin of the message.
      * @param msg The specified message.
      */
     template <typename St, typename... Ts>
-    void logOrigin(uint8_t lvl, St origin, Ts... msg)
+    void log(uint8_t lvl, St origin, Ts... msg)
     {
         if ((lvl < level && level) || handler == nullptr)
             return;
 
-        getLogger()
+        handler
 #ifdef ARDUINO
         << millis()
 #else // !defined(ARDUINO)
@@ -160,11 +128,11 @@ public:
         << ':';
 
         if (lvl % 10 == 0)
-            getLogger() << (char*)pgm_read_ptr(&levelDesc[lvl / 10 - 1]) << ':';
+            handler << (char*)pgm_read_ptr(&levelDesc[lvl / 10 - 1]) << ':';
         else
-            getLogger() << "Lvl " << lvl << ':';
+            handler << "Lvl " << lvl << ':';
 
-        getLogger() << origin << ": ";
+        handler << origin << ": ";
         outputData(msg...) << endl;
     }
 
@@ -172,40 +140,40 @@ public:
      * @brief output a @ref INFO level message
      * @param msg The message to output.
      */
-    template <typename... Ts>
-    void info(Ts... msg)
+    template <typename St, typename... Ts>
+    void info(St origin, Ts... msg)
     {
-        log(INFO, msg...);
+        log(INFO, origin, msg...);
     }
 
     /**
      * @brief output a @ref DEBUG level message
      * @param msg The message to output.
      */
-    template <typename... Ts>
-    void debug(Ts... msg)
+    template <typename St, typename... Ts>
+    void debug(St origin, Ts... msg)
     {
-        log(DEBUG, msg...);
+        log(DEBUG, origin, msg...);
     }
 
     /**
      * @brief output a @ref WARN level message
      * @param msg The message to output.
      */
-    template <typename... Ts>
-    void warn(Ts... msg)
+    template <typename St, typename... Ts>
+    void warn(St origin, Ts... msg)
     {
-        log(WARN, msg...);
+        log(WARN, origin, msg...);
     }
 
     /**
      * @brief output a @ref ERROR level message
      * @param msg The message to output.
      */
-    template <typename... Ts>
-    void error(Ts... msg)
+    template <typename St, typename... Ts>
+    void error(St origin, Ts... msg)
     {
-        log(ERROR, msg...);
+        log(ERROR, origin, msg...);
     }
 
 protected:
@@ -234,8 +202,8 @@ protected:
     template <typename Tdata>
     StreamType &outputData(Tdata data)
     {
-        getLogger() << data;
-        return getLogger();
+        handler << data;
+        return handler;
     }
 
     /**
@@ -249,7 +217,7 @@ protected:
     template <typename Tdata, typename... Rest>
     StreamType &outputData(Tdata data, Rest... rest)
     {
-        getLogger() << data;
+        handler << data;
         return outputData(rest...);
     }
 

@@ -94,15 +94,6 @@ public:
         out_stream = outStream;
     }
 
-    /**
-     * Get a reference to the output stream
-     * @returns The instantiated output stream passed to setStream()
-     */
-    Print& getStream()
-    {
-        return *out_stream;
-    }
-
     template <class T>
     friend inline Print &operator <<(Print &obj, T arg);
 
