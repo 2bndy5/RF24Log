@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rf24loglevel_40',['RF24LogLevel',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0',1,'RF24LogLevel.h']]]
+  ['_5flinefeed_63',['_LineFeed',['../group__endl.html#ga199129fd6369564f66b8a0a19786b0c4',1,'PrintOut.h']]]
 ];

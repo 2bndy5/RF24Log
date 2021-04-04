@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['all_41',['ALL',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0ab1d5eac4b1dca480c8056eaea7663b7a',1,'RF24LogLevel.h']]]
+  ['endl_64',['endl',['../group__endl.html#gga199129fd6369564f66b8a0a19786b0c4a5cbad4ad24fd9b8c066cdad096cd2f18',1,'PrintOut.h']]]
 ];
