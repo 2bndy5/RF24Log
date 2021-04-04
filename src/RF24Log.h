@@ -98,16 +98,6 @@ public:
     }
 
     /**
-     * @brief Set a default @p name for the instance
-     *
-     * @param name This will be used in calls to log(uint8_t lvl, Ts msg...)
-     */
-    void setName(const char* name)
-    {
-        strcpy(_name, name);
-    }
-
-    /**
      * @brief Log a message
      * @param lvl The logging level used for the specified message.
      * @param origin The orgin of the message.
@@ -119,7 +109,7 @@ public:
         if ((lvl < level && level) || handler == nullptr)
             return;
 
-        handler
+        *handler
 #ifdef ARDUINO
         << millis()
 #else // !defined(ARDUINO)
@@ -128,11 +118,11 @@ public:
         << ':';
 
         if (lvl % 10 == 0)
-            handler << (char*)pgm_read_ptr(&levelDesc[lvl / 10 - 1]) << ':';
+            *handler << (char*)pgm_read_ptr(&levelDesc[lvl / 10 - 1]) << ':';
         else
-            handler << "Lvl " << lvl << ':';
+            *handler << "Lvl " << lvl << ':';
 
-        handler << origin << ": ";
+        *handler << origin << ": ";
         outputData(msg...) << endl;
     }
 
@@ -202,8 +192,8 @@ protected:
     template <typename Tdata>
     StreamType &outputData(Tdata data)
     {
-        handler << data;
-        return handler;
+        *handler << data;
+        return *handler;
     }
 
     /**
@@ -217,7 +207,7 @@ protected:
     template <typename Tdata, typename... Rest>
     StreamType &outputData(Tdata data, Rest... rest)
     {
-        handler << data;
+        *handler << data;
         return outputData(rest...);
     }
 

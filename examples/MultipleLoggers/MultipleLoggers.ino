@@ -22,12 +22,11 @@ class MyLib1
   public:
     MyLib1() {
       logger = RF24Logger<Stream_t>(&logging);
-      logger.setName("MyLib1");
-      logger.info("object instantiated successfully!");
+      logger.info("MyLib1", "object instantiated successfully!");
     }
 
     void func(uint8_t arg) {
-      logger.logOrigin(INFO, "MyLib1.func", "received ", arg, " as an argument");
+      logger.log(INFO, "MyLib1.func", "received ", arg, " as an argument");
     }
 };
 
@@ -39,13 +38,12 @@ class MyLib2
   public:
     MyLib2() {
       logger = RF24Logger<Stream_t>(&logging);
-      logger.setName("MyLib2");
-      logger.info("object instantiated successfully!");
+      logger.info("MyLib2", "object instantiated successfully!");
       logger.setLevel(WARN); // notice this is after we called logger.info()
     }
 
     void func(uint8_t arg) {
-      logger.logOrigin(INFO, "MyLib2.func", "received ", arg, " as an argument");
+      logger.log(INFO, "MyLib2.func", "received ", arg, " as an argument");
     }
 };
 
@@ -64,7 +62,7 @@ void setup() {
   logging.setLevel(INFO);
 
   // print an origin agnostic message
-  logging.getLogger() << "Starting MultipleLogger Example" << endl;
+  ardout << "Starting MultipleLogger Example" << endl;
 
   lib1 = new MyLib1();
   lib2 = new MyLib2();

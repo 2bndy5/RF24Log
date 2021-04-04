@@ -20,25 +20,20 @@ void setup() {
   logging.setHandler(&ardout);
 
   // print an origin agnostic message
-  logging.getLogger() << endl << "Starting BasicLogger Example" << endl;
-  // which is usably equivalent to the following
-  ardout << "A prompt without using the logging object" << endl << endl;
-
-  // set a default origin name for all messages
-  logging.setName("RF24Log");
+  ardout << "Starting BasicLogger Example" << endl;
 
   // by default, messages for all logging levels are disabled
   logging.setLevel(DEBUG); // set to debug level (0 will disable logging messages)
 }
 
 void loop() {
-  logging.debug("This is a DEBUG message");
-  logging.info("This is an INFO message");
-  logging.warn("This is a WARN message");
-  logging.error("This is an ERROR message");
-  logging.log(11, "This is a message for a custom DEBUG sublevel");
-  logging.logOrigin(12, "SimonSays", "This is a message from a specific code block");
-  logging.log(20, "The number ", 64, " is ", String(64, HEX), " in hexadecimal");
-  logging.logOrigin(21, "End:of:Loop", "This is a message for a custom INFO sublevel");
+  logging.debug("RF24Log", "This is a DEBUG message");
+  logging.info("RF24Log", "This is an INFO message");
+  logging.warn("RF24Log", "This is a WARN message");
+  logging.error("RF24Log", "This is an ERROR message");
+  logging.log(11, "RF24Log", "This is a message for a custom DEBUG sublevel");
+  logging.log(12, "SimonSays", "This is a message from a specific code block");
+  logging.log(20, "RF24Log", "The number ", 64, " is ", String(64, HEX), " in hexadecimal");
+  logging.log(21, "End:of:Loop", "This is a message for a custom INFO sublevel");
   delay(1000); // slow down loop for readability
 }
