@@ -75,37 +75,37 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>MyLib1</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a name="_a1"></a><a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a> logger;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  MyLib1() {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    logger = <a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a>(&amp;<a name="a2"></a><a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    logger.<a name="a3"></a><a class="code" href="class_r_f24_logger.html#ac1958d0ba8d52d7e034caa11675ce0e2">setName</a>(<span class="stringliteral">&quot;MyLib1&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    logger.<a name="a4"></a><a class="code" href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">info</a>(<span class="stringliteral">&quot;object instantiated successfully!&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    MyLib1() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      logger = <a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a>(&amp;<a name="a2"></a><a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      logger.<a name="a3"></a><a class="code" href="class_r_f24_logger.html#ac1958d0ba8d52d7e034caa11675ce0e2">setName</a>(<span class="stringliteral">&quot;MyLib1&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      logger.<a name="a4"></a><a class="code" href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">info</a>(<span class="stringliteral">&quot;object instantiated successfully!&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> func(uint8_t arg) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    logger.<a name="a5"></a><a class="code" href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">logOrigin</a>(<a name="a6"></a><a class="code" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a>, <span class="stringliteral">&quot;MyLib1.func&quot;</span>, <span class="stringliteral">&quot;received &quot;</span>, arg, <span class="stringliteral">&quot; as an argument&quot;</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> func(uint8_t arg) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      logger.<a name="a5"></a><a class="code" href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">logOrigin</a>(<a name="a6"></a><a class="code" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a>, <span class="stringliteral">&quot;MyLib1.func&quot;</span>, <span class="stringliteral">&quot;received &quot;</span>, arg, <span class="stringliteral">&quot; as an argument&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>MyLib2</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a> logger;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  MyLib2() {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    logger = <a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a>(&amp;<a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    logger.<a class="code" href="class_r_f24_logger.html#ac1958d0ba8d52d7e034caa11675ce0e2">setName</a>(<span class="stringliteral">&quot;MyLib2&quot;</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    logger.<a class="code" href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">info</a>(<span class="stringliteral">&quot;object instantiated successfully!&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    logger.<a name="a7"></a><a class="code" href="class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef">setLevel</a>(<a name="a8"></a><a class="code" href="group__log_levels.html#ga271d8f7f52be750e5c744a394ec71344">WARN</a>); <span class="comment">// notice this is after we called logger.info()</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    MyLib2() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      logger = <a class="code" href="class_r_f24_logger.html">RF24Logger&lt;Stream_t&gt;</a>(&amp;<a class="code" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      logger.<a class="code" href="class_r_f24_logger.html#ac1958d0ba8d52d7e034caa11675ce0e2">setName</a>(<span class="stringliteral">&quot;MyLib2&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      logger.<a class="code" href="class_r_f24_logger.html#a23272a52e02bdbb5e23cd9f156fa1e53">info</a>(<span class="stringliteral">&quot;object instantiated successfully!&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      logger.<a name="a7"></a><a class="code" href="class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef">setLevel</a>(<a name="a8"></a><a class="code" href="group__log_levels.html#ga271d8f7f52be750e5c744a394ec71344">WARN</a>); <span class="comment">// notice this is after we called logger.info()</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> func(uint8_t arg) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    logger.<a class="code" href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">logOrigin</a>(<a class="code" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a>, <span class="stringliteral">&quot;MyLib2.func&quot;</span>, <span class="stringliteral">&quot;received &quot;</span>, arg, <span class="stringliteral">&quot; as an argument&quot;</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> func(uint8_t arg) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      logger.<a class="code" href="class_r_f24_logger.html#aaeadb730df5eece90642e3ed87649e4b">logOrigin</a>(<a class="code" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a>, <span class="stringliteral">&quot;MyLib2.func&quot;</span>, <span class="stringliteral">&quot;received &quot;</span>, arg, <span class="stringliteral">&quot; as an argument&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;MyLib1* lib1 = <span class="keyword">nullptr</span>;</div>
