@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logging_56',['logging',['../_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf',1,'RF24Log.h']]]
+  ['logging_54',['logging',['../_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf',1,'RF24Log.h']]]
 ];
