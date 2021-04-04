@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['rf24_5fmin_21',['rf24_min',['../_r_f24_log__config_8h.html#a803c01bff6ebb264fb8b4438eb65f098',1,'RF24Log_config.h']]],
-  ['rf24log_22',['RF24Log',['../index.html',1,'']]],
-  ['rf24log_2eh_23',['RF24Log.h',['../_r_f24_log_8h.html',1,'']]],
-  ['rf24log_5fconfig_2eh_24',['RF24Log_config.h',['../_r_f24_log__config_8h.html',1,'']]],
-  ['rf24log_5fversion_5fmajor_25',['RF24Log_VERSION_MAJOR',['../_r_f24_log__config_8h.html#a0537d9eb6e742b3463deb6a7d9756c84',1,'RF24Log_config.h']]],
-  ['rf24log_5fversion_5fminor_26',['RF24Log_VERSION_MINOR',['../_r_f24_log__config_8h.html#a324967d345e4605b9b5346b67af5c63e',1,'RF24Log_config.h']]],
-  ['rf24log_5fversion_5fpatch_27',['RF24Log_VERSION_PATCH',['../_r_f24_log__config_8h.html#abf913b71cc65977ce2860802f0349b6c',1,'RF24Log_config.h']]],
-  ['rf24logger_28',['RF24Logger',['../class_r_f24_logger.html',1,'RF24Logger&lt; StreamType &gt;'],['../class_r_f24_logger.html#a07d7c7939e4acbe0e94a38ab587f033c',1,'RF24Logger::RF24Logger()'],['../class_r_f24_logger.html#afe28371a64d154f8c9d1c0d8b8274780',1,'RF24Logger::RF24Logger(StreamType *stream, const char *name, uint8_t lvl=NOT_SET)'],['../class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861',1,'RF24Logger::RF24Logger(RF24Logger *obj)']]]
+  ['sethandler_26',['setHandler',['../class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36',1,'RF24Logger']]],
+  ['setlevel_27',['setLevel',['../class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef',1,'RF24Logger']]],
+  ['setname_28',['setName',['../class_r_f24_logger.html#ac1958d0ba8d52d7e034caa11675ce0e2',1,'RF24Logger']]],
+  ['setstream_29',['setStream',['../class_print_out.html#a42725855c22a3b0c11b5f692ad3d832d',1,'PrintOut']]],
+  ['stream_5ft_30',['Stream_t',['../group__stream_type_doc.html#gae85f8973b164120ecbc4278f0510e99b',1,'Stream_t():&#160;PrintOut.h'],['../group__stream_type_doc.html#gae85f8973b164120ecbc4278f0510e99b',1,'Stream_t():&#160;RF24Log_config.h']]],
+  ['streamtype_31',['StreamType',['../group__stream_type_doc.html',1,'']]]
 ];
