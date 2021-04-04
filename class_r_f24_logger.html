@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RF24Log: RF24Logger&lt; StreamType &gt; Class Template Reference</title>
+<title>RF24Log: RF24Logger Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,88 +65,82 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_r_f24_logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">RF24Logger&lt; StreamType &gt; Class Template Reference</div>  </div>
+<div class="title">RF24Logger Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07d7c7939e4acbe0e94a38ab587f033c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a07d7c7939e4acbe0e94a38ab587f033c">RF24Logger</a> ()</td></tr>
-<tr class="separator:a07d7c7939e4acbe0e94a38ab587f033c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f12fa13ef8855e9374d20790a81024"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a92f12fa13ef8855e9374d20790a81024">RF24Logger</a> (StreamType *stream, uint8_t lvl=<a class="el" href="group__log_levels.html#ga53228be549fb0aa91100133f3d83846d">NOT_SET</a>)</td></tr>
-<tr class="separator:a92f12fa13ef8855e9374d20790a81024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8f5f5db2a585065d3f0351158601861"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861">RF24Logger</a> (<a class="el" href="class_r_f24_logger.html">RF24Logger</a> *obj)</td></tr>
-<tr class="separator:ac8f5f5db2a585065d3f0351158601861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcc5a9ab11a29ef8440b68c8b717b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#affcc5a9ab11a29ef8440b68c8b717b36">setHandler</a> (StreamType *stream)</td></tr>
-<tr class="separator:affcc5a9ab11a29ef8440b68c8b717b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564fe5c4520d970e5690ce01078208ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a564fe5c4520d970e5690ce01078208ef">setLevel</a> (uint8_t lvl)</td></tr>
-<tr class="separator:a564fe5c4520d970e5690ce01078208ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39490d0c7eca4a7e759648cfdaea5e73"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
-<tr class="memitem:a39490d0c7eca4a7e759648cfdaea5e73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a39490d0c7eca4a7e759648cfdaea5e73">log</a> (uint8_t lvl, St origin, Ts... msg)</td></tr>
-<tr class="memdesc:a39490d0c7eca4a7e759648cfdaea5e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message.  <a href="class_r_f24_logger.html#a39490d0c7eca4a7e759648cfdaea5e73">More...</a><br /></td></tr>
-<tr class="separator:a39490d0c7eca4a7e759648cfdaea5e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776a4d74e03f6a0dd1ae6f95fb9ada49"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
-<tr class="memitem:a776a4d74e03f6a0dd1ae6f95fb9ada49"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a776a4d74e03f6a0dd1ae6f95fb9ada49">info</a> (St origin, Ts... msg)</td></tr>
-<tr class="memdesc:a776a4d74e03f6a0dd1ae6f95fb9ada49"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a <a class="el" href="group__log_levels.html#gae1103fea1e1b3c41ca3322d5389f7162">INFO</a> level message  <a href="class_r_f24_logger.html#a776a4d74e03f6a0dd1ae6f95fb9ada49">More...</a><br /></td></tr>
-<tr class="separator:a776a4d74e03f6a0dd1ae6f95fb9ada49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e70f7c1babe46708debf1466c8e7512"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
-<tr class="memitem:a0e70f7c1babe46708debf1466c8e7512"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a0e70f7c1babe46708debf1466c8e7512">debug</a> (St origin, Ts... msg)</td></tr>
-<tr class="memdesc:a0e70f7c1babe46708debf1466c8e7512"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a <a class="el" href="group__log_levels.html#gad72dbcf6d0153db1b8d8a58001feed83">DEBUG</a> level message  <a href="class_r_f24_logger.html#a0e70f7c1babe46708debf1466c8e7512">More...</a><br /></td></tr>
-<tr class="separator:a0e70f7c1babe46708debf1466c8e7512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ca13b9a39ce7700d1819f1901ed794"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
-<tr class="memitem:a92ca13b9a39ce7700d1819f1901ed794"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a92ca13b9a39ce7700d1819f1901ed794">warn</a> (St origin, Ts... msg)</td></tr>
-<tr class="memdesc:a92ca13b9a39ce7700d1819f1901ed794"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a <a class="el" href="group__log_levels.html#ga271d8f7f52be750e5c744a394ec71344">WARN</a> level message  <a href="class_r_f24_logger.html#a92ca13b9a39ce7700d1819f1901ed794">More...</a><br /></td></tr>
-<tr class="separator:a92ca13b9a39ce7700d1819f1901ed794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463d55e790db50ded91eb1ee2a169741"><td class="memTemplParams" colspan="2">template&lt;typename St , typename... Ts&gt; </td></tr>
-<tr class="memitem:a463d55e790db50ded91eb1ee2a169741"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a463d55e790db50ded91eb1ee2a169741">error</a> (St origin, Ts... msg)</td></tr>
-<tr class="memdesc:a463d55e790db50ded91eb1ee2a169741"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a <a class="el" href="group__log_levels.html#ga8fe83ac76edc595f6b98cd4a4127aed5">ERROR</a> level message  <a href="class_r_f24_logger.html#a463d55e790db50ded91eb1ee2a169741">More...</a><br /></td></tr>
-<tr class="separator:a463d55e790db50ded91eb1ee2a169741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a222e1941d86618132d03ff45fc09d408"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a222e1941d86618132d03ff45fc09d408">timestamp</a> ()</td></tr>
-<tr class="memdesc:a222e1941d86618132d03ff45fc09d408"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a timestamp for the proceeding message  <a href="class_r_f24_logger.html#a222e1941d86618132d03ff45fc09d408">More...</a><br /></td></tr>
-<tr class="separator:a222e1941d86618132d03ff45fc09d408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe17c6bdb49d85f26a356b9beffbebad"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
-<tr class="memitem:afe17c6bdb49d85f26a356b9beffbebad"><td class="memTemplItemLeft" align="right" valign="top">StreamType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#afe17c6bdb49d85f26a356b9beffbebad">outputData</a> (Tdata data)</td></tr>
-<tr class="memdesc:afe17c6bdb49d85f26a356b9beffbebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">output an arbitrary type of data  <a href="class_r_f24_logger.html#afe17c6bdb49d85f26a356b9beffbebad">More...</a><br /></td></tr>
-<tr class="separator:afe17c6bdb49d85f26a356b9beffbebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0621bef753a8a0564ad67b559117f3d7"><td class="memTemplParams" colspan="2">template&lt;typename Tdata , typename... Rest&gt; </td></tr>
-<tr class="memitem:a0621bef753a8a0564ad67b559117f3d7"><td class="memTemplItemLeft" align="right" valign="top">StreamType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a0621bef753a8a0564ad67b559117f3d7">outputData</a> (Tdata data, Rest... rest)</td></tr>
-<tr class="memdesc:a0621bef753a8a0564ad67b559117f3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">output an arbitrary type of data  <a href="class_r_f24_logger.html#a0621bef753a8a0564ad67b559117f3d7">More...</a><br /></td></tr>
-<tr class="separator:a0621bef753a8a0564ad67b559117f3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3589cfd19931ce88370d42f20ac613"><td class="memItemLeft" align="right" valign="top"><a id="aff3589cfd19931ce88370d42f20ac613"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#aff3589cfd19931ce88370d42f20ac613">RF24Logger</a> ()</td></tr>
+<tr class="memdesc:aff3589cfd19931ce88370d42f20ac613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the appender to nullptr. <br /></td></tr>
+<tr class="separator:aff3589cfd19931ce88370d42f20ac613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6d6098ff3862c5aa46694dfa1457f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2">setHandler</a> (<a class="el" href="class_r_f24_log_handler.html">RF24LogHandler</a> *handler)</td></tr>
+<tr class="memdesc:a2b6d6098ff3862c5aa46694dfa1457f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the instance's handler  <a href="class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2">More...</a><br /></td></tr>
+<tr class="separator:a2b6d6098ff3862c5aa46694dfa1457f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050e89bac4d701bdeba5fd22616c469b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a050e89bac4d701bdeba5fd22616c469b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a050e89bac4d701bdeba5fd22616c469b">error</a> (const __FlashStringHelper *vendorId, T message,...)</td></tr>
+<tr class="memdesc:a050e89bac4d701bdeba5fd22616c469b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ouput an ERROR message  <a href="class_r_f24_logger.html#a050e89bac4d701bdeba5fd22616c469b">More...</a><br /></td></tr>
+<tr class="separator:a050e89bac4d701bdeba5fd22616c469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6efe14deef8b5743c1d2453f97a459d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ac6efe14deef8b5743c1d2453f97a459d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d">warn</a> (const __FlashStringHelper *vendorId, T message,...)</td></tr>
+<tr class="memdesc:ac6efe14deef8b5743c1d2453f97a459d"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a message to WARN the reader  <a href="class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d">More...</a><br /></td></tr>
+<tr class="separator:ac6efe14deef8b5743c1d2453f97a459d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290ecc99b17dc2afd6eca6515e6e1bad"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a290ecc99b17dc2afd6eca6515e6e1bad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a290ecc99b17dc2afd6eca6515e6e1bad">info</a> (const __FlashStringHelper *vendorId, T message,...)</td></tr>
+<tr class="memdesc:a290ecc99b17dc2afd6eca6515e6e1bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">output an INFO message  <a href="class_r_f24_logger.html#a290ecc99b17dc2afd6eca6515e6e1bad">More...</a><br /></td></tr>
+<tr class="separator:a290ecc99b17dc2afd6eca6515e6e1bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa542a411df157f699dcc47f4d7acc718"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa542a411df157f699dcc47f4d7acc718"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#aa542a411df157f699dcc47f4d7acc718">debug</a> (const __FlashStringHelper *vendorId, T message,...)</td></tr>
+<tr class="memdesc:aa542a411df157f699dcc47f4d7acc718"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a message to help developers DEBUG their source code  <a href="class_r_f24_logger.html#aa542a411df157f699dcc47f4d7acc718">More...</a><br /></td></tr>
+<tr class="separator:aa542a411df157f699dcc47f4d7acc718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5682dca5812185ca49e38808f862fd9c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5682dca5812185ca49e38808f862fd9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_f24_logger.html#a5682dca5812185ca49e38808f862fd9c">log</a> (uint8_t logLevel, const __FlashStringHelper *vendorId, T message,...)</td></tr>
+<tr class="memdesc:a5682dca5812185ca49e38808f862fd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">output a log message of any level  <a href="class_r_f24_logger.html#a5682dca5812185ca49e38808f862fd9c">More...</a><br /></td></tr>
+<tr class="separator:a5682dca5812185ca49e38808f862fd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename StreamType&gt;<br />
-class RF24Logger&lt; StreamType &gt;</h3>
+<div class="textblock"><p>This is the end-user's access point into the world of logging messages. </p>
 
-<p>A templated class for implementing a single logging object. Copied <a class="el" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a> objects (using <a class="el" href="class_r_f24_logger.html#ac8f5f5db2a585065d3f0351158601861">RF24Logger(RF24Logger*)</a>) will re-use the original handler and level. </p><dl class="section see"><dt>See also</dt><dd>the pre-instantiated <a class="el" href="_r_f24_log_8h.html#a8bf9367744937d929569a14e93f1cddf">logging</a> variable </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_multiple_loggers_8ino-example.html#_a1">MultipleLoggers.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00049">49</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a07d7c7939e4acbe0e94a38ab587f033c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07d7c7939e4acbe0e94a38ab587f033c">&#9670;&nbsp;</a></span>RF24Logger() <span class="overload">[1/3]</span></h2>
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00028">28</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa542a411df157f699dcc47f4d7acc718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa542a411df157f699dcc47f4d7acc718">&#9670;&nbsp;</a></span>debug()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StreamType &gt; </div>
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::<a class="el" href="class_r_f24_logger.html">RF24Logger</a> </td>
+          <td class="memname">void RF24Logger::debug </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const __FlashStringHelper *&#160;</td>
+          <td class="paramname"><em>vendorId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -155,120 +149,173 @@ template&lt;typename StreamType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>the output stream Empty constructor. level defaults to <a class="el" href="group__log_levels.html#ga53228be549fb0aa91100133f3d83846d">NOT_SET</a>, and instance has no handler. </p>
 
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00059">59</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
+<p>output a message to help developers DEBUG their source code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendorId</td><td>A scoping identity of the message's origin </td></tr>
+    <tr><td class="paramname">message</td><td>The message to output </td></tr>
+    <tr><td class="paramname">args</td><td>consumable arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a6">BasicSerialLogger.ino</a>, and <a class="el" href="_empty_logger_8ino-example.html#a4">EmptyLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00104">104</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
 
 </div>
 </div>
-<a id="a92f12fa13ef8855e9374d20790a81024"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f12fa13ef8855e9374d20790a81024">&#9670;&nbsp;</a></span>RF24Logger() <span class="overload">[2/3]</span></h2>
+<a id="a050e89bac4d701bdeba5fd22616c469b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050e89bac4d701bdeba5fd22616c469b">&#9670;&nbsp;</a></span>error()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename StreamType &gt; </div>
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::<a class="el" href="class_r_f24_logger.html">RF24Logger</a> </td>
+          <td class="memname">void RF24Logger::error </td>
           <td>(</td>
-          <td class="paramtype">StreamType *&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
+          <td class="paramtype">const __FlashStringHelper *&#160;</td>
+          <td class="paramname"><em>vendorId</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ouput an ERROR message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendorId</td><td>A scoping identity of the message's origin </td></tr>
+    <tr><td class="paramname">message</td><td>The message to output </td></tr>
+    <tr><td class="paramname">args</td><td>consumable arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a4">BasicSerialLogger.ino</a>, and <a class="el" href="_empty_logger_8ino-example.html#a2">EmptyLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00050">50</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
+
+</div>
+</div>
+<a id="a290ecc99b17dc2afd6eca6515e6e1bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290ecc99b17dc2afd6eca6515e6e1bad">&#9670;&nbsp;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RF24Logger::info </td>
+          <td>(</td>
+          <td class="paramtype">const __FlashStringHelper *&#160;</td>
+          <td class="paramname"><em>vendorId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>output an INFO message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendorId</td><td>A scoping identity of the message's origin </td></tr>
+    <tr><td class="paramname">message</td><td>The message to output </td></tr>
+    <tr><td class="paramname">args</td><td>consumable arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a3">BasicSerialLogger.ino</a>, and <a class="el" href="_empty_logger_8ino-example.html#a1">EmptyLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00086">86</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
+
+</div>
+</div>
+<a id="a5682dca5812185ca49e38808f862fd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5682dca5812185ca49e38808f862fd9c">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RF24Logger::log </td>
+          <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>lvl</em> = <code><a class="el" href="group__log_levels.html#ga53228be549fb0aa91100133f3d83846d">NOT_SET</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Instance constructor. The , and the instance's handler is initialized. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>The handler to which all logging output will be directed. </td></tr>
-    <tr><td class="paramname">lvl</td><td>The instance's logging level defaults to <a class="el" href="group__log_levels.html#ga53228be549fb0aa91100133f3d83846d">NOT_SET</a> if not specified. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00069">69</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
-
-</div>
-</div>
-<a id="ac8f5f5db2a585065d3f0351158601861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f5f5db2a585065d3f0351158601861">&#9670;&nbsp;</a></span>RF24Logger() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename StreamType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::<a class="el" href="class_r_f24_logger.html">RF24Logger</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt; *&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Copy constructor. Instance's log level and handler are set to <code>obj</code> instance's corresponding values. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obj</td><td>An instantiated <a class="el" href="class_r_f24_logger.html">RF24Logger</a> object from which values are copied from. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="_r_f24_log_8h_source.html#l00078">78</a> of file <a class="el" href="_r_f24_log_8h_source.html">RF24Log.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0e70f7c1babe46708debf1466c8e7512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e70f7c1babe46708debf1466c8e7512">&#9670;&nbsp;</a></span>debug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename StreamType &gt; </div>
-<div class="memtemplate">
-template&lt;typename St , typename... Ts&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_r_f24_logger.html">RF24Logger</a>&lt; StreamType &gt;::debug </td>
-          <td>(</td>
-          <td class="paramtype">St&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
+          <td class="paramname"><em>logLevel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Ts...&#160;</td>
-          <td class="paramname"><em>msg</em>&#160;</td>
+          <td class="paramtype">const __FlashStringHelper *&#160;</td>
+          <td class="paramname"><em>vendorId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -276,3 +323,125 @@ template&lt;typename St , typename... Ts&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>output a log message of any level </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendorId</td><td>A scoping identity of the message's origin </td></tr>
+    <tr><td class="paramname">message</td><td>The message to output </td></tr>
+    <tr><td class="paramname">args</td><td>consumable arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a7">BasicSerialLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00122">122</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
+
+</div>
+</div>
+<a id="a2b6d6098ff3862c5aa46694dfa1457f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6d6098ff3862c5aa46694dfa1457f2">&#9670;&nbsp;</a></span>setHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RF24Logger::setHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_f24_log_handler.html">RF24LogHandler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the instance's handler </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The log handler where the messages will be redirected. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a2">BasicSerialLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8cpp_source.html#l00024">24</a> of file <a class="el" href="_r_f24_logger_8cpp_source.html">RF24Logger.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6efe14deef8b5743c1d2453f97a459d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6efe14deef8b5743c1d2453f97a459d">&#9670;&nbsp;</a></span>warn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RF24Logger::warn </td>
+          <td>(</td>
+          <td class="paramtype">const __FlashStringHelper *&#160;</td>
+          <td class="paramname"><em>vendorId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>output a message to WARN the reader </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vendorId</td><td>A scoping identity of the message's origin </td></tr>
+    <tr><td class="paramname">message</td><td>The message to output </td></tr>
+    <tr><td class="paramname">args</td><td>consumable arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basic_serial_logger_8ino-example.html#a5">BasicSerialLogger.ino</a>, and <a class="el" href="_empty_logger_8ino-example.html#a3">EmptyLogger.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_f24_logger_8h_source.html#l00068">68</a> of file <a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/<a class="el" href="_r_f24_logger_8h_source.html">RF24Logger.h</a></li>
+<li>src/<a class="el" href="_r_f24_logger_8cpp_source.html">RF24Logger.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
