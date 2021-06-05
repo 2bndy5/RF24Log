@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['log_8',['log',['../class_r_f24_logger.html#a5682dca5812185ca49e38808f862fd9c',1,'RF24Logger::log()'],['../class_r_f24_log_handler.html#a974793351e13c4e0b370921194801e30',1,'RF24LogHandler::log(uint8_t logLevel, const __FlashStringHelper *vendorId, const char *message, va_list *args)'],['../class_r_f24_log_handler.html#a596539b2fe6854ba1e7a4148105b5acf',1,'RF24LogHandler::log(uint8_t logLevel, const __FlashStringHelper *vendorId, const __FlashStringHelper *message, va_list *args)']]]
+  ['fill_23',['fill',['../struct_format_specifier.html#aded3b73c060a32f43fd197c834780ff2',1,'FormatSpecifier']]],
+  ['formatspecifier_24',['FormatSpecifier',['../struct_format_specifier.html',1,'FormatSpecifier'],['../struct_format_specifier.html#ae7be313b95cf7a71a2ca5c28139a942f',1,'FormatSpecifier::FormatSpecifier()']]],
+  ['formatspecifier_2ecpp_25',['FormatSpecifier.cpp',['../_format_specifier_8cpp.html',1,'']]],
+  ['formatspecifier_2eh_26',['FormatSpecifier.h',['../_format_specifier_8h.html',1,'']]]
 ];

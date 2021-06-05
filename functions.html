@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RF24Log
-   &#160;<span id="projectnumber">0.0.1-beta</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Unified logging library</div>
   </td>
@@ -63,31 +63,166 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div><ul>
-<li>debug()
-: <a class="el" href="class_r_f24_logger.html#aa542a411df157f699dcc47f4d7acc718">RF24Logger</a>
+<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+
+<h3><a id="index__5F"></a>- _ -</h3><ul>
+<li>_logLevel
+: <a class="el" href="class_r_f24_log_abstract_handler.html#a650052e3d7dea165ccfbc93e0ca267a2">RF24LogAbstractHandler</a>
 </li>
-<li>error()
-: <a class="el" href="class_r_f24_logger.html#a050e89bac4d701bdeba5fd22616c469b">RF24Logger</a>
+<li>_stream
+: <a class="el" href="class_arduino_print_logger.html#ab9ff13bcb691928daa5ada01cc8d2376">ArduinoPrintLogger</a>
 </li>
-<li>info()
-: <a class="el" href="class_r_f24_logger.html#a290ecc99b17dc2afd6eca6515e6e1bad">RF24Logger</a>
+</ul>
+
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>appendChar()
+: <a class="el" href="class_arduino_print_logger.html#a8de4efe37ef9aa43ad82b176b21252d6">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#a65add4f9391c15cc1d1fe23fe9968bf2">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#a3e979d09892a586f8f458ed7b210f53e">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#aae27a36f91c4f03e443e581b63252fef">RF24LogAbstractStream</a>
+</li>
+<li>appendDouble()
+: <a class="el" href="class_arduino_print_logger.html#ac3e87079fd45654e6f4e2d094790d388">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#afdab078931aebd8da69edafc7748b52f">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#a8baef5f18471ee46faa50a684b33e8c1">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#aed0c58fe5d99a5761700afafa36f9005">RF24LogAbstractStream</a>
+</li>
+<li>appendFormat()
+: <a class="el" href="class_r_f24_log_abstract_stream.html#accf2a0a8f016b59dfe50d95738685690">RF24LogAbstractStream</a>
+</li>
+<li>appendInt()
+: <a class="el" href="class_arduino_print_logger.html#a2fde51af1c208622fdc323c0ec6b6a76">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#abdec089ec62ba24de269e4e88f090132">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#ad7b7e00f6023b42c2b05e70c6fbb3e64">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#a5bad6b3989d129ab396a98f3e99df863">RF24LogAbstractStream</a>
+</li>
+<li>appendLogLevel()
+: <a class="el" href="class_r_f24_log_abstract_stream.html#a9c59714e52407ee1a03513c68b428a99">RF24LogAbstractStream</a>
+</li>
+<li>appendStr()
+: <a class="el" href="class_arduino_print_logger.html#a6ef1df03ec8e89515ff467eaf64bc7d8">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#aa8f9893285a2c56a37659b18ebaa57ad">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#ac06915d24dc6ab8dc61cd009acc9080a">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#a6c883ca4fd17889b6f99e5ac1d002558">RF24LogAbstractStream</a>
+</li>
+<li>appendTimestamp()
+: <a class="el" href="class_arduino_print_logger.html#a0e0e99600181bdaf0c11422b07126329">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#a5e176db3130233e863677d22b6ae5355">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#a31baad77b29303321f8e829792c90e49">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#ae35e9817bba316084750577925ca531f">RF24LogAbstractStream</a>
+</li>
+<li>appendUInt()
+: <a class="el" href="class_arduino_print_logger.html#a8fcbe8037e8099b9273cd5de163ff542">ArduinoPrintLogger</a>
+, <a class="el" href="class_native_print_logger.html#a9bba6083efa24facae190c3ce16795bb">NativePrintLogger</a>
+, <a class="el" href="class_o_stream_logger.html#adca50c4860e24eb94347cde20bf5bf0e">OStreamLogger</a>
+, <a class="el" href="class_r_f24_log_abstract_stream.html#a3b0601d83b146abd08758a5431ee0b3b">RF24LogAbstractStream</a>
+</li>
+<li>ArduinoPrintLogger()
+: <a class="el" href="class_arduino_print_logger.html#a7a060a0055e96cc5a0e8dcd90d10e92e">ArduinoPrintLogger</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>descTimeLevel()
+: <a class="el" href="class_r_f24_log_abstract_stream.html#ae7b7c7980e4076659bf8f47daeba0094">RF24LogAbstractStream</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>fill
+: <a class="el" href="struct_format_specifier.html#aded3b73c060a32f43fd197c834780ff2">FormatSpecifier</a>
+</li>
+<li>FormatSpecifier()
+: <a class="el" href="struct_format_specifier.html#ae7be313b95cf7a71a2ca5c28139a942f">FormatSpecifier</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>isFlagged()
+: <a class="el" href="struct_format_specifier.html#a91577cc7d54023986c89a1c4c783d419">FormatSpecifier</a>
+</li>
+<li>isFmtOption()
+: <a class="el" href="struct_format_specifier.html#ab8b36f631f30603ab1042351e2696dd5">FormatSpecifier</a>
+</li>
+<li>isPaddPrec()
+: <a class="el" href="struct_format_specifier.html#a31c472519d18461ddaa081df95553454">FormatSpecifier</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>length
+: <a class="el" href="struct_format_specifier.html#a00a30968210d5877a82fcb204a31aee7">FormatSpecifier</a>
 </li>
 <li>log()
-: <a class="el" href="class_r_f24_logger.html#a5682dca5812185ca49e38808f862fd9c">RF24Logger</a>
-, <a class="el" href="class_r_f24_log_handler.html#a974793351e13c4e0b370921194801e30">RF24LogHandler</a>
+: <a class="el" href="class_r_f24_log_abstract_handler.html#a54660bdcc2271e75e2a07a60928b5a89">RF24LogAbstractHandler</a>
+, <a class="el" href="class_r_f24_log_base_handler.html#a59283a813d5f0af55996618ae1dcbab7">RF24LogBaseHandler</a>
+, <a class="el" href="class_r_f24_log_dual_handler.html#a3f2ddca33eb6b42993b6b28c43e6f0e2">RF24LogDualHandler</a>
+, <a class="el" href="class_r_f24_logging.html#a197f0b717a027c511a9dc3634dbc9089">RF24Logging</a>
 </li>
-<li>RF24Logger()
-: <a class="el" href="class_r_f24_logger.html#aff3589cfd19931ce88370d42f20ac613">RF24Logger</a>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>NativePrintLogger()
+: <a class="el" href="class_native_print_logger.html#af5d94600acf3a6bbbbd37751d9fb88d2">NativePrintLogger</a>
 </li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
+<li>OStreamLogger()
+: <a class="el" href="class_o_stream_logger.html#a7c8efbb70c6c6cd7cf6d12c73fc77a59">OStreamLogger</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>precis
+: <a class="el" href="struct_format_specifier.html#ac35449d1a706bd2f9bd0ecfb17e07689">FormatSpecifier</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>RF24LogAbstractHandler()
+: <a class="el" href="class_r_f24_log_abstract_handler.html#a727eba3803143b9b771abbf3b41e71c6">RF24LogAbstractHandler</a>
+</li>
+<li>RF24LogDualHandler()
+: <a class="el" href="class_r_f24_log_dual_handler.html#a77c5c4e50d9caed93a9e894e72525206">RF24LogDualHandler</a>
+</li>
+<li>RF24Logging()
+: <a class="el" href="class_r_f24_logging.html#a8326d01f37e4f7cd33eab97398060935">RF24Logging</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
 <li>setHandler()
-: <a class="el" href="class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2">RF24Logger</a>
+: <a class="el" href="class_r_f24_logging.html#af7fe2277501fdcc0c5731f7d721f7723">RF24Logging</a>
 </li>
 <li>setLogLevel()
-: <a class="el" href="class_r_f24_log_handler.html#a7ae1378ea39e298905f51ac54a4a7d80">RF24LogHandler</a>
+: <a class="el" href="class_r_f24_log_abstract_handler.html#a964b4de4cae6567127b51502497f55cb">RF24LogAbstractHandler</a>
+, <a class="el" href="class_r_f24_log_base_handler.html#a05a67bd549dce582b5ac6015f43fd019">RF24LogBaseHandler</a>
+, <a class="el" href="class_r_f24_log_dual_handler.html#af60a8a3f16c5055f47b43b94d5ad3069">RF24LogDualHandler</a>
 </li>
-<li>warn()
-: <a class="el" href="class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d">RF24Logger</a>
+<li>specifier
+: <a class="el" href="struct_format_specifier.html#a7df091aee13cce764dae2d99bb54a657">FormatSpecifier</a>
+</li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>width
+: <a class="el" href="struct_format_specifier.html#a4099613997a8a6f965a7701dcd02e1a1">FormatSpecifier</a>
+</li>
+<li>write()
+: <a class="el" href="class_r_f24_log_abstract_handler.html#a8f50251b51562787436b0dd6cdc0e359">RF24LogAbstractHandler</a>
+, <a class="el" href="class_r_f24_log_printf_parser.html#a47e693af8d708cdd92df8e5431da6136">RF24LogPrintfParser</a>
 </li>
 </ul>
 </div><!-- contents -->

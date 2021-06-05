@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['warn_21',['warn',['../class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d',1,'RF24Logger']]],
-  ['warn_22',['WARN',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a74dac7ac23d5b810db6d4067f14e8676',1,'RF24LogLevel.h']]]
+  ['nativeprintlogger_38',['NativePrintLogger',['../class_native_print_logger.html',1,'NativePrintLogger'],['../class_native_print_logger.html#af5d94600acf3a6bbbbd37751d9fb88d2',1,'NativePrintLogger::NativePrintLogger()']]],
+  ['nativeprintlogger_2ecpp_39',['NativePrintLogger.cpp',['../_native_print_logger_8cpp.html',1,'']]],
+  ['nativeprintlogger_2eh_40',['NativePrintLogger.h',['../_native_print_logger_8h.html',1,'']]],
+  ['numbcharstoprint_41',['numbCharsToPrint',['../_common_8cpp.html#a2c06064452e44307d32c08845d39cda1',1,'numbCharsToPrint(int64_t numb, uint8_t base):&#160;Common.cpp'],['../_common_8h.html#a514766ee83e51e5016c3dfdc261c9d52',1,'numbCharsToPrint(int64_t numb, uint8_t base=10):&#160;Common.cpp']]]
 ];

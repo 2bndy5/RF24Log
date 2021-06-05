@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['info_31',['info',['../class_r_f24_logger.html#a290ecc99b17dc2afd6eca6515e6e1bad',1,'RF24Logger']]]
+  ['formatspecifier_136',['FormatSpecifier',['../struct_format_specifier.html#ae7be313b95cf7a71a2ca5c28139a942f',1,'FormatSpecifier']]]
 ];

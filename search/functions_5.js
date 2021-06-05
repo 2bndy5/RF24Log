@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sethandler_34',['setHandler',['../class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2',1,'RF24Logger']]],
-  ['setloglevel_35',['setLogLevel',['../class_r_f24_log_handler.html#a7ae1378ea39e298905f51ac54a4a7d80',1,'RF24LogHandler']]]
+  ['nativeprintlogger_141',['NativePrintLogger',['../class_native_print_logger.html#af5d94600acf3a6bbbbd37751d9fb88d2',1,'NativePrintLogger']]],
+  ['numbcharstoprint_142',['numbCharsToPrint',['../_common_8cpp.html#a2c06064452e44307d32c08845d39cda1',1,'numbCharsToPrint(int64_t numb, uint8_t base):&#160;Common.cpp'],['../_common_8h.html#a514766ee83e51e5016c3dfdc261c9d52',1,'numbCharsToPrint(int64_t numb, uint8_t base=10):&#160;Common.cpp']]]
 ];

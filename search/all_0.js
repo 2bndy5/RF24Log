@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['all_0',['ALL',['../_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0ab1d5eac4b1dca480c8056eaea7663b7a',1,'RF24LogLevel.h']]]
+  ['_5floglevel_0',['_logLevel',['../class_r_f24_log_abstract_handler.html#a650052e3d7dea165ccfbc93e0ca267a2',1,'RF24LogAbstractHandler']]],
+  ['_5fstream_1',['_stream',['../class_arduino_print_logger.html#ab9ff13bcb691928daa5ada01cc8d2376',1,'ArduinoPrintLogger']]]
 ];

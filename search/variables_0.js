@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rf24logger_37',['rf24Logger',['../_r_f24_logger_8cpp.html#a69c6af0be57a4a9868d516ef55e843f0',1,'rf24Logger():&#160;RF24Logger.cpp'],['../_r_f24_logger_8h.html#a69c6af0be57a4a9868d516ef55e843f0',1,'rf24Logger():&#160;RF24Logger.cpp']]]
+  ['_5floglevel_150',['_logLevel',['../class_r_f24_log_abstract_handler.html#a650052e3d7dea165ccfbc93e0ca267a2',1,'RF24LogAbstractHandler']]],
+  ['_5fstream_151',['_stream',['../class_arduino_print_logger.html#ab9ff13bcb691928daa5ada01cc8d2376',1,'ArduinoPrintLogger']]]
 ];

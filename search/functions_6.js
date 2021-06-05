@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warn_36',['warn',['../class_r_f24_logger.html#ac6efe14deef8b5743c1d2453f97a459d',1,'RF24Logger']]]
+  ['ostreamlogger_143',['OStreamLogger',['../class_o_stream_logger.html#a7c8efbb70c6c6cd7cf6d12c73fc77a59',1,'OStreamLogger']]]
 ];
