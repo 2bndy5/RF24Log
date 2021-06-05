@@ -39,9 +39,6 @@ endif()
 ############################
 cmake_minimum_required(VERSION 3.15)
 
-# optionally build a debian install-able package (.deb file) instead of installing library
-option(BUILD_DEB_PKG "set to on to build a debian package" OFF)
-
 # Set the project name to your project name
 project(RF24Log C CXX)
 include(cmake/StandardProjectSettings.cmake)
